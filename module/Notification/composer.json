@@ -1,0 +1,16 @@
+{
+    "name":"SavveCentral/Notification",
+    "description":"Notifications module for Savvecentral3",
+    "type":"zf2-module",
+    "minimum-stability":"dev",
+    "require":{
+        "php":"^5.5 | ^7.0"
+	},
+	"autoload":{
+        "psr-4":{
+            "Notification\\":"/Notification",
+            "Notification\\Learner\\":"/Learner",
+            "Notification\\Group\\":"/Group"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name":"Savvecentral/GoogleAnalytics",
+    "description":"GoogleAnalytics module for Savvecentral 3.0",
+    "homepage":"http://packagist.savvecentral.com.au/",
+    "type":"zf2-module",
+    "minimum-stability":"dev",
+    "require":{
+        "php":"^5.5 | ^7.0"
+	},
+	"autoload":{
+        "psr-4":{
+            "Savvecentral\\GoogleAnalytics\\":"/src"
+        }
+    }
+}

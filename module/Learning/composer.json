@@ -1,0 +1,21 @@
+{
+    "name":"SavveCentral/Learning",
+    "description":"Learning module for Savvecentral 3.The base entity of the learning .Fundamental atom for the entire network",
+    "type":"savve-module",
+    "minimum-stability":"dev",
+    "require":{
+        "php":"^5.5 | ^7.0"
+	},
+	"autoload":{
+        "psr-4":{
+            "Learning\\":"/Learning",
+            "FaceToFace\\":"/FaceToFace",
+            "OnTheJobAssessment\\":"/OnTheJobAssessment",
+            "Resource\\":"/Resource",
+            "Scorm12\\":"/Scorm12/src",
+            "Tincan\\":"/Tincan/src",
+            "Webinar\\":"/Webinar",
+            "WrittenAssessment\\":"/WrittenAssessment"
+        }
+    }
+}

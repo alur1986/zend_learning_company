@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `scorm12_item` (
+  `item_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `activity_id` int(11) unsigned NOT NULL COMMENT 'References learning_activity.activity_id',
+  `title` varchar(1024) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `identifier` varchar(64) COLLATE utf16_unicode_ci DEFAULT 'Collection',
+  `item_location` varchar(512) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `is_visible` enum('true','false') COLLATE utf16_unicode_ci NOT NULL DEFAULT 'true',
+  `max_time_allowed` varchar(16) COLLATE utf16_unicode_ci DEFAULT '0000:00:00.00',
+  `prerequisites` varchar(32) COLLATE utf16_unicode_ci DEFAULT NULL COMMENT 'This is disabled within the items now. All the items are visible by default',
+  `time_limit_action` enum('exit message','exit no message','continue message','continue no message') COLLATE utf16_unicode_ci DEFAULT 'continue no message',
+  `data_from_lms` varchar(2048) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `mastery_score` int(11) DEFAULT NULL,
+  `parent` varchar(64) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `allowed_attempts` int(11) DEFAULT '10',
+  `allow_browse` tinyint(4) NOT NULL DEFAULT '0',
+  `allow_review_on_completion` tinyint(4) NOT NULL DEFAULT '1',
+  `allow_review_on_fail` tinyint(4) NOT NULL DEFAULT '1',
+  `course_scrollable` tinyint(4) NOT NULL DEFAULT '0',
+  `course_width` int(11) unsigned NOT NULL DEFAULT '1012',
+  `course_height` int(11) unsigned NOT NULL DEFAULT '688',
+  PRIMARY KEY (`item_id`),
+  KEY `IDX_SCORM12_ITEM_ACTIVITY_ID` (`activity_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

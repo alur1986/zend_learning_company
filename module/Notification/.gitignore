@@ -1,0 +1,11 @@
+*.log
+*.idea
+.buildpath
+.project
+.settings
+composer.lock
+Thumbs.db
+.Trashes
+.DS_Store
+.DS_Store?
+._*

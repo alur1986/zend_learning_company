@@ -1,0 +1,24 @@
+{
+    "name":"SavveCentral/Report",
+    "description":"Reporting module for SavveCentral3",
+    "type":"zf2-module",
+    "minimum-stability":"dev",
+    "require":{
+        "php":"^5.5 | ^7.0"
+        ,"mikehaertl/phpwkhtmltopdf":"1.2.5"
+	},
+	"autoload":{
+        "psr-4":{
+            "Report\\":"/Report",
+            "Report\\EventProgressDetails\\":"/EventProgressDetails",
+            "Report\\EventProgressSummary\\":"/EventProgressSummary",
+            "Report\\LearningProgressDetails\\":"/LearningProgressDetails",
+            "Report\\LearningProgressSummary\\":"/LearningProgressSummary",
+            "Report\\IndividualLearning\\":"/IndividualLearning",
+            "Report\\IndividualLocker\\":"/IndividualLocker",
+            "Report\\MyLearning\\":"/MyLearning",
+            "Report\\MyLocker\\":"/MyLocker",
+            "Report\\Interactions\\":"/Interactions"
+        }
+    }
+}

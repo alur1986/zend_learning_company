@@ -1,0 +1,15 @@
+{
+    "name":"SavveCentral/Group",
+    "description":"Group module for the SavveCentral3",
+    "type":"zf2-module",
+    "minimum-stability":"dev",
+    "require":{
+        "php":"^5.5 | ^7.0"
+	},
+	"autoload":{
+        "psr-4":{
+            "Group\\":"/Group/src",
+            "Group\\Learner\\":"/Learner/src"
+        }
+    }
+}
